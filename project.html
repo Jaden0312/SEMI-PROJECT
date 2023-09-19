@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <video autoplay loop muted plays-inline id="background-video">
+            <source src="nebula_blue_-_49252 (Original).mp4" type="video/mp4">
+        </video>
+            <section id="container">
+            <form id="form-1" action="result.html" method="get">
+            <h3>CREATE ACCOUNT</h3>
+                <input type="text" name="id" placeholder="Enter your ID" required>
+                <input type="password" name="password" placeholder="Enter your password" required>
+                <input type="password" name="confirm-password" placeholder="Confirm password" required>
+
+                <div class="btn-box">
+                    <button type="button" id="next-1">Next</button>
+                </div>
+            </form>
+
+            <form id="form-2" action="result.html" method="get">
+                <h3>YOUR SKILLS</h3>
+                <input type="text" name="skill-1" placeholder="Enter your skills">
+                <input type="text" name="skill-2" placeholder="Enter your skills">
+                <input type="text" name="skill-3" placeholder="Enter your skills">
+
+                <div class="btn-box">
+                    <button type="button" id="back-1">Back</button>
+                    <button type="button" id="next-2">Next</button>
+                </div>
+            </form>
+
+            <form id="form-3" action="result.html" method="get">
+                <h3>YOUR PROFILE</h3>
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="text" name="e-mail" placeholder="Enter your e-mail" required>
+                <input type="text" name="age" placeholder="Enter your age">
+
+                <div class="btn-box">
+                    <button type="button" id="back-2">Back</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+
+            <div class="progress-bar">
+                <div id="progress-back"></div>
+                    <div class="step-bar"><h4>Step 1</h4></div>
+                    <div class="step-bar"><h4>Step 2</h4></div>
+                    <div class="step-bar"><h4>Step 3</h4></div>
+            </div>
+        
+
+            </section>
+    </div>
+
+    <script src="project.js"></script>
+</body>

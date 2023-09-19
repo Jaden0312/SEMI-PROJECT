@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script:wght@700&family=Noto+Sans+KR&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(moon.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#background-video{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+
+#container {
+    width: 360px;
+    height: 400px;
+    margin: 15% auto;
+    background: #fff;
+    opacity: 0.8;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #777;
+}
+
+form {
+    width: 280px;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    transition: 0.8s;
+}
+
+input {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.btn-box {
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+button {
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    background-color: #344B4D;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#form-2 {
+    left: 450px;
+}
+
+#form-3 {
+    left: 450px;
+}
+
+.progress-bar {
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #000;
+    position: relative;
+}
+
+.step-bar {
+    width: 120px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+#progress-back {
+    position: absolute;
+    height: 100%;
+    width: 120px;
+    background-color: #344B4D;
+    transition: 0.5s;
+}
