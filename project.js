@@ -10,6 +10,7 @@ const secondBack = document.getElementById('back-2');
 
 const progressBar = document.getElementById('progress-back');
 
+
 const backgroundVideo = document.getElementById('background-video');
 
 //Next,Back 버튼 클릭 시 form 및 진행바 변경
@@ -17,6 +18,7 @@ firstNext.addEventListener('click', () => {
     firstForm.style.left = '-450px';
     secondForm.style.left = '40px';
     progressBar.style.width = '240px';
+    validatePassword();
 })
 firstBack.addEventListener('click', () => {
     firstForm.style.left = '40px';
@@ -36,4 +38,21 @@ secondBack.addEventListener('click', () => {
     progressBar.style.width = '240px';
     backgroundVideo.style.visibility = 'hidden';
 })
+
+//비밀번호 일치 불일치 function
+function validatePassword() {
+    const password = document.getElementById('password');
+    const confirmPassword = document.getElementById('password-confirm');
+    const confirmMessage = document.getElementById('confirm-message');
+        if (password.value !== confirmPassword.value) {
+            confirmMessage.innerHTML = "Don't Correct Password"
+            confirmMessage.style.color = 'red';
+            firstForm.style.left = '';
+            secondForm.style.left = '';
+            progressBar.style.width = '';
+        } else {
+            confirmMessage.innerHTML = '';
+        }
+    }
+
 
